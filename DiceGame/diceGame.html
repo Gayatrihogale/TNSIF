@@ -1,0 +1,156 @@
+<html>
+
+<head>
+    <title>Dice Game</title>
+    <style>
+        .container {
+            width: 70%;
+            margin: auto;
+            text-align: center;
+        }
+
+        .dice {
+            text-align: center;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        body {
+            background-color: #042f4b;
+            margin: 0;
+        }
+
+        h1 {
+            margin: 30px;
+            font-family: "Lobster", cursive;
+            text-shadow: 5px 0 #232931;
+            font-size: 4.5rem;
+            color: #4ecca3;
+            text-align: center;
+        }
+
+        p {
+            font-size: 2rem;
+            color: #4ecca3;
+            font-family: "Indie Flower", cursive;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .bottom {
+            padding-top: 30px;
+        }
+
+        .btn {
+            background: #4ecca3;
+            font-family: "Indie Flower", cursive;
+            border-radius: 7px;
+            color: #ffff;
+            font-size: 30px;
+            padding: 16px 25px 16px 25px;
+            text-decoration: none;
+        }
+
+        .butn:hover {
+            background: #232931;
+            text-decoration: none;
+        }
+
+        
+.even-roll {
+  transition: transform 1.5s ease-out;
+}
+.odd-roll {
+  transition: transform 1.25s ease-out;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Let's Play!!</h1>
+
+        <div class="dice">
+            <p class="Player1">Player1</p>
+            <img src="dice6.png" alt="dice 6" class="img1">
+        </div>
+        <div class="dice">
+            <p class="Player2">Player2</p>
+            <img src="dice6.png" alt="dice 6" class="img2">
+        </div>
+        <div class="dice">
+            <p class="Player3">Player3</p>
+            <img src="dice6.png" alt="dice 6" class="img3">
+        </div>
+        <div class="dice">
+            <p class="Player4">Player4</p>
+            <img src="dice6.png" alt="dice 6" class="img4">
+        </div>
+    
+
+    <div class="container bottom">
+        <button type="button" class="btn" onclick="rollTheDice()">
+            Roll The Dice</button>
+        
+    
+</div>
+    <script>
+        //player Name
+        let player1 = "Player1";
+        let player2 = "Player2";
+        let player3 = "player3";
+        let player4 = "player4";
+
+
+        function rollTheDice() {
+            let diceNum1 = document.querySelector(".img1");
+            let diceNum2 = document.querySelector(".img2");
+            let diceNum3 = document.querySelector(".img3");
+            let diceNum4 = document.querySelector(".img4");
+            
+
+            diceNum1.setAttribute("src", "diceroll.gif")
+            diceNum2.setAttribute("src", "diceroll.gif")
+            diceNum3.setAttribute("src", "diceroll.gif")
+            diceNum4.setAttribute("src", "diceroll.gif")
+
+            let result = document.querySelector('h1')
+            result.innerHTML = ""
+            setTimeout(() => {
+                let randomNumber1 = Math.floor(Math.random() * 6) + 1;
+                let randomNumber2 = Math.floor(Math.random() * 6) + 1;
+                let randomNumber3 = Math.floor(Math.random() * 6) + 1;
+                let randomNumber4 = Math.floor(Math.random() * 6) + 1;
+
+
+                diceNum1.setAttribute('src', 'dice' + randomNumber1 + '.png');
+                diceNum2.setAttribute('src', 'dice' + randomNumber2 + '.png');
+                diceNum3.setAttribute('src', 'dice' + randomNumber3 + '.png');
+                diceNum4.setAttribute('src', 'dice' + randomNumber4 + '.png');
+
+
+                //determine the winner
+                if (randomNumber1 === randomNumber2 && randomNumber2 === randomNumber3 && randomNumber3 === randomNumber4) {
+    result.innerHTML = "Draw!";
+} else if (randomNumber1 > randomNumber2 && randomNumber1 > randomNumber3 && randomNumber1 > randomNumber4) {
+    result.innerHTML = (player1 + " WINS!");
+} else if (randomNumber2 > randomNumber1 && randomNumber2 > randomNumber3 && randomNumber2 > randomNumber4) {
+    result.innerHTML = (player2 + " WINS!");
+} else if (randomNumber3 > randomNumber1 && randomNumber3 > randomNumber2 && randomNumber3 > randomNumber4) {
+    result.innerHTML = (player3 + " WINS!");
+} else if (randomNumber4 > randomNumber1 && randomNumber4 > randomNumber2 && randomNumber4 > randomNumber3) {
+    result.innerHTML = (player4 + " WINS!");
+} else {
+    result.innerHTML = "Draw!";
+}
+
+
+            }, 2500);
+        }
+
+    </script>
+</body>
+
+</html>
