@@ -1,0 +1,71 @@
+Java Full Stack Developer Course with Angular / React
+
+Day 1 - Introduction to Java, Eclipse +6 programs(programming basics identifiers,keyword,data types,typecasting)+Coding standards
+
+Day 2 - Git &Git-hub -Setup +  7 more programs(programming basics looping structures,conditional statements,operators),Scanner class introduction
+
+Day 3 - OOPS Concepts 
+            Encapsulation -class and object(1 programs -without user input)
+            Inheritance,polymorphism,Abstraction(Theory), Constructors,this keyword, 
+            Scanner Class(2 programs- with user input for each class)
+
+Day 4 - Packages, Access Modifier(2 programs with public, private ,default)
+         instanceOf (1 program)
+
+Day 5 - Inheritance, revision on Packages, Access Modifier/protected(3 programs)
+             super keyword,hasA ,isA relationShip(2 programs)
+
+Day 6 - Static, final(2 programs)
+
+Day 7 – Polymorphism (4 types )
+              Compile time - Constructor overloading,method overloading
+              Run time: Method overriding, Dynamic binding
+
+Day 8 -  Abstraction (2 programs),  Interfaces(2 programs)
+       (class->interface,  interface->interface)
+
+Day 9 - Object, String , StringBuffer ,Wrapper Classes(Convey properly)(5 programs )
+
+Day 10 - Arrays(4 programs -single,multi,jagged,array of objects,Array class)
+
+Day 11 - Exception  handling ( 3 programs)
+
+Day 12 - Exception  handling ( 3 program)
+
+Day 13 -  Multi threading( 3)
+
+Day 14 -  Multi threading(2)
+
+Day 15 - JAVA Collections 1 ,Generic(List interface 4 program along with generic)
+
+
+Day 16 -   JAVA Collections (Queue -2 programs),forEach
+Day 17 -   JAVA Collections (Set and Tree-5 programs)
+
+Day 18 -    JAVA Collections ,  Concurrency (Map+concurrency 3 programs)
+
+Day 19 -   Lambda Expressions (3 programs)
+
+Day 20 -  Stream API(3 programs)
+
+Day 21 -  Annotations(2 programs)
+
+Day 22 -   JDBC- 1 program
+
+Day 23 -   JDBC - MVC - CRUD Operations
+
+Day 24 –  JDBC- other DB operations,transaction ,properties(2 programs)
+
+Day 25 – JUnit 5
+
+Day 26 - Design Patterns
+
+Day 27 - Design Patterns
+
+
+Self Learning one weekend/trainer on leave- Date Time API,  Enums,  Regex, java.io
+Link for Date Time API: 
+Link for Enums:
+Link RegEx: 
+Design Patterns Link: https://youtube.com/playlist?list=PLzS3AYzXBoj8t5hPykr5VU7jG-kEim-LX
+Extra 
